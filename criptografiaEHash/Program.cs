@@ -1,3 +1,4 @@
 ﻿using criptografiaEHash;
 
-AES.Main();
+AES.CBCExecute();
+AES.GCMExecute();
