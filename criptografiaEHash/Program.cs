@@ -3,4 +3,6 @@
 //AES.CBCExecute();
 //AES.GCMExecute();
 
-HASH.Execute();
+//HASH.Execute();
+
+Mac.Execute();

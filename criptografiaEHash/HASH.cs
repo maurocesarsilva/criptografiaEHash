@@ -112,9 +112,14 @@ namespace criptografiaEHash
 			}
 		}
 
-		
+
 		/// <summary>
 		/// Argon usar a lib Sodium.Core
+		/// Algoritimos recomendados para senha em ordem de utilização se a tecnologia não dar suporte
+		/// Argon2(Recomendação OWASP)
+		///BCrypt
+		///Scrypt
+		///PBKDF2 com 310.000 iterações e hash HMAC-SHA-256
 		/// </summary>
 
 		public static void BenchMarkHash()
@@ -220,17 +225,6 @@ namespace criptografiaEHash
 			Argon2(password, out seconds, out hashCount);
 			Console.WriteLine($"Argon2: {hashCount:N}");
 		}
-
-		/// <summary>
-		/// Algoritimos recomendados para senha em ordem de utilização se a tecnologia não dar suporte
-		/// Argon2(Recomendação OWASP)
-		///BCrypt
-		///Scrypt
-		///PBKDF2 com 310.000 iterações e hash HMAC-SHA-256
-		/// </summary>
-		public static void Senhas()
-		{
-
-		}
+		
 	}
 }
